@@ -1,0 +1,61 @@
+public Move chooseBestMove(BlokusBoard board, ArrayList<Move> moves)
+    {
+
+        double bestScore = -1000;
+
+        int indexOfBestScore =-1;
+    /*    double o =0.0;
+
+        for(int a = 0; a<moves.size() ; a++)
+        {
+            scoresForEachIndex.add(new Point2D.Double(o,gradeMove(board,moves.get(a))));
+            if(gradeMove(board,moves.get(a))>bestScore) {
+                bestScore = gradeMove(board, moves.get(a));
+                indexOfBestScore = a;
+            }
+            o+= 1.0;
+        }
+
+        for(int a =1; a<scoresForEachIndex.size(); a++) {
+            Point2D temp = scoresForEachIndex.get(a);
+            int j = a;
+
+            while (j > 0 && scoresForEachIndex.get(j - 1).getY() < temp.getY()) {
+                //            Shape tempShape = board.getShapes().get(usableShapePositions.get(a));
+     /*           usableShapePositions.remove(j);
+                usableShapePositions.add(j-1,temp);
+                scoresForEachIndex.set(j, scoresForEachIndex.get(j - 1));
+                j = j - 1;
+            }
+
+            scoresForEachIndex.set(j,temp);
+        }/
+        for(int a = 0; a<moves.size() ; a++)
+        {
+
+            if(gradeMove(board,moves.get(a))>bestScore) {
+                bestScore = gradeMove(board, moves.get(a));
+                indexOfBestScore = a;
+            }
+
+        }
+     /       ArrayList<Move> bestNMoves =new ArrayList<Move>();
+
+            for(int aa= 0; aa<nMovesToStore ; aa++) {
+                bestNMoves.add(moves.get((int)scoresForEachIndex.get(aa).getX()));
+            }
+            for(int aa= 0; aa<nMovesToStore ; aa++) {
+                System.out.print(bestNMoves.get(aa).getPieceNumber()+" ");
+            }
+   //
+            System.out.println();*/
+
+
+
+
+        if(indexOfBestScore == -1)
+            return null;
+
+        return moves.get(indexOfBestScore);
+
+    }
